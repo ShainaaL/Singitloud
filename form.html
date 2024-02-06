@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>SingItLoud</title>
-    <link href="form.css" type="text/css" rel="stylesheet"> 
+    <link href="style/stylef.css" type="text/css" rel="stylesheet"> 
 </head>
 
 <body>
-    <header role="banner"><h1>SingItLoud</h1></header>
+    <header role="banner"><h1><a href="singitloud.html">Sing It Loud</a></h1></header>
     <nav aria-labelledby="menu-navigation">
         <ul>
             <li><a href="artiste.html">Artiste</a></li>
@@ -15,7 +15,48 @@
             <li><a class="form" target="_blank" href="form.html">Form</a></li>
             </ul>
     </nav>
-    <main></main>
+    <main><h3>Form</h3>
+        <form>
+              <label for="name">Full Name:</label>
+              <input type="text" id="name" name="name" autocomplete="fullname"><br>
+      
+              <label for="email">Email Address:</label>
+              <input type="email" id="email" name="email"  autocomplete="mail" required><br>
+      
+              <label for="drama">Favorite Movies:</label>
+              <input type="text" id="drama" name="drama" required><br>
+      
+              <label for="genre">Favorite Movies Genre:</label>
+              <select id="genre" name="genre">
+                  <option value="romance">Romance</option>
+                  <option value="action">Action</option>
+                  <option value="comedy">Comedy</option>
+                  <option value="sliceoflife">Slice of life</option>
+                  <option value="Documentaire">Documentaire</option>
+                  <option value="Bollywood">Bollywood</option>
+              </select>
+      <br><br><br><br>
+          </form>
+       <label for="comments">Comments:</label><br>
+              <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+      
+              <button id="mon-bouton">Envoyer la réponse</button>
+              <div id="mon-alerte" role="alert"></div>
+              <script type="text/template" id="contenu-alerte">
+                  <p>Ceci est une alerte</p>
+              </script>
+          <script>
+              let monBouton = document.querySelector('#mon-bouton');
+              monBouton.addEventListener('click', afficherAlerte);
+      
+              function afficherAlerte() {
+                  let monAlerte = document.querySelector('#mon-alerte');
+                  let contenuAlerte = document.querySelector('#contenu-alerte').innerHTML;
+      
+                  monAlerte.innerHTML = contenuAlerte;
+              } 
+          </script>
+    </main>
 
 </body>
 </html>
