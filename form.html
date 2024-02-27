@@ -7,43 +7,42 @@
 </head>
 
 <body>
-    <header role="banner"><h1><a href="singitloud.html">Sing It Loud</a></h1></header>
+    <header role="banner"><h1><a href="artiste.html">Sing It Loud</a></h1></header>
     <nav aria-labelledby="menu-navigation">
         <ul>
-            <li><a href="artiste.html">Artiste</a></li>
+            <li><a href="index.html">Artiste</a></li>
             <li><a class="still" href="album.html">Album</a></li>
             <li><a class="form" target="_blank" href="form.html">Form</a></li>
             </ul>
     </nav>
-    <main><h3>Form</h3>
+    <br><br>
+    <main>
         <form>
-              <label for="name">Full Name:</label>
-              <input type="text" id="name" name="name" autocomplete="fullname"><br>
+              <label for="prenom">Prénom:</label>
+              <input type="text" id="prenom" name="prenom"><br>
       
-              <label for="email">Email Address:</label>
+              <label for="email">Adresse Email:</label>
               <input type="email" id="email" name="email"  autocomplete="mail" required><br>
       
-              <label for="drama">Favorite Movies:</label>
-              <input type="text" id="drama" name="drama" required><br>
+              <label for="artiste_favoris">Artiste favoris</label>
+              <input type="text" id="artiste_favoris" name="artiste_favoris"><br>
       
-              <label for="genre">Favorite Movies Genre:</label>
-              <select id="genre" name="genre">
-                  <option value="romance">Romance</option>
-                  <option value="action">Action</option>
-                  <option value="comedy">Comedy</option>
-                  <option value="sliceoflife">Slice of life</option>
-                  <option value="Documentaire">Documentaire</option>
-                  <option value="Bollywood">Bollywood</option>
+              <label for="album_favoris">Album Favoris:</label>
+              <select id="album_favoris" name="album_favoris">
+                  <option value="nakamura">Nakamura</option>
+                  <option value="melo">Mélo</option>
+                  <option value="sos">SOS</option>
+                  <option value="purpose">Purpose</option>
               </select>
-      <br><br><br><br>
-          </form>
-       <label for="comments">Comments:</label><br>
-              <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+      <br><br><br>
+          
+       <label for="commentaire">Commente les albums que tu aimerais voir bientôt sur notre  site :</label>
+              <textarea id="commentaire" name="commentaire" rows="4" cols="50"></textarea><br>
       
               <button id="mon-bouton">Envoyer la réponse</button>
               <div id="mon-alerte" role="alert"></div>
               <script type="text/template" id="contenu-alerte">
-                  <p>Ceci est une alerte</p>
+                  <p>Informations manquantes</p>
               </script>
           <script>
               let monBouton = document.querySelector('#mon-bouton');
@@ -55,7 +54,7 @@
       
                   monAlerte.innerHTML = contenuAlerte;
               } 
-          </script>
+          </script></form>
     </main>
 
 </body>
