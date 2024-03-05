@@ -1,53 +1,84 @@
-
-html {
-    box-sizing:content-box;  
-}
-   
-body {
-    background-image: linear-gradient(
-    0deg,
-    rgb(246, 214, 214) 23.8%,
-    rgb(255, 184, 176) 92%
-  );background-color: #ffffff;
-  width: 1450px;
-  margin: 40px auto;
-}
-
-ul {
-   list-style-type: none;
+*{
    margin: 0;
    padding: 0;
-
- }
-
-li {
-   float: left;
- }
-
-li a {
-   display: block;
+   background-color:  #ffffff;
+}
+.navbar-top{
+   width: 100%;
+   height: 10vh;
+   display: flex;
+   align-items: center;
    text-align: center;
-   padding: 20px 221.2px;
-   background-color: rgb(171, 196, 201);
-   color: black;
- }
+   justify-content: space-between;
+}
+.search-bar input {
+   padding: 7px 10px;
+   border-radius: 15px;
+   border: 1px solid #ccc;
+   width: 220px;
+}
+.search-bar {
+   margin-top: 10px;
 
-li a:hover {
- background-color: #4d78ab;
- }
+}
 
-h1 {
-   color: rgb(0, 0, 0);
-   font-family:'Times New Roman', Times, serif;
-   font-size:xx-large;
+@media screen and (max-width: 400px) {
+.search-bar input {
+   width: 100%; /* Full width search bar */
+}
+}
+
+.logo img {
+   max-width: 100%;
+   height: auto;
+   margin-right: 100px;
+}
+.icons a img{
+   margin-left: 10px;
+   cursor: pointer;
+}
+
+@media screen  and (max-width:400px) {
+   .icons a img{
+       width: 20px;
+   }
+}
+
+.bg-bisque {
+   background-color: #ffffff;
+   border-bottom: 2px solid #a56d86;
+}
+
+.main-content{
+   width: 100%;
+   height: 53vh;
+   background-color: #ffffff;
+   border-top: 2px solid #a56d86;
+   border-bottom: 2px solid #a56d86;
+}
+
+.nav-link{
+   margin-left: 50px;
    text-align: center;
-  }
+   font-weight: bold;
+   color:  #a56d86;
+}
 
-  a:link { text-decoration: none; }
-  a:visited { text-decoration: none; }
-  a:hover { text-decoration: none; }
-  a:active { text-decoration: none; }
-
+.content{
+   padding: 110px;
+}
+.content h1{
+   font-size: 6rem;
+   font-weight: 700;
+   text-align: center;
+   color: #a56d86;
+   margin-left: 40px;
+}
+@media screen  and (max-width:400px) {
+   .content h1{
+       font-size: 30px;
+   }
+}
 
 form {
    margin: 50px;
